@@ -257,12 +257,19 @@ body {
     padding: clamp(0.8rem, 3vw, 2.5rem);
     box-shadow: var(--shadow-lg);
     display: grid;
-    grid-template-columns: clamp(120px, 20vw, 180px) 1fr clamp(120px, 20vw, 180px);
+    grid-template-columns: 1fr;  /* Mobile: single column layout */
     gap: clamp(1rem, 2vw, 2.5rem);
     align-items: start;
     margin-bottom: 2rem;
     min-width: 0; /* allow grid to shrink on narrow viewports */
     position: relative;
+}
+
+/* Desktop: 3-column layout (avatar | content | actions) */
+@media (min-width: 768px) {
+    .about-card {
+        grid-template-columns: auto 1fr auto;
+    }
 }
 
 .about-card > * {
@@ -297,11 +304,12 @@ body {
 }
 
 .profile-actions {
-    justify-self: end;
-    align-self: start;
     display: flex;
     gap: 0.6rem;
     flex-direction: column;
+    /* On desktop grid, this aligns to the right */
+    justify-self: end;
+    align-self: start;
 }
 
 .social-btn {
@@ -1112,15 +1120,7 @@ body {
     height: clamp(3px, 0.5vw, 4px);
 }
 
-.about-card {
-    grid-template-columns: clamp(150px, 35vw, 1fr) 1fr;
-    padding: clamp(0.8rem, 3vw, 2rem);
-    gap: clamp(0.8rem, 2vw, 2rem);
-}
 
-.profile-image {
-    order: -1;
-}
 
 .avatar {
     width: clamp(100px, 20vw, 180px);
