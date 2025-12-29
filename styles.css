@@ -775,11 +775,12 @@ body {
 .cert-link {
     background: var(--secondary-color);
     color: var(--white-color);
-    padding: 0.3rem 0.8rem;
+    padding: clamp(0.2rem, 0.5vw, 0.3rem) clamp(0.4rem, 1vw, 0.8rem);
     border-radius: 4px;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
+    font-size: clamp(0.65rem, 1.2vw, 0.85rem);
 }
 
 /* Awards Section */
