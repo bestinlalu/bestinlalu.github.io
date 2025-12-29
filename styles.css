@@ -949,25 +949,72 @@ body {
 }
 
 /* Responsive Design */
+
+/* Large Desktop (1440px and up) - baseline */
+
+/* Tablet and larger mobile (1024px and down) */
+@media (max-width: 1024px) {
+    .main-content {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .about-card {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .awards-list {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* Tablet and mobile (768px and down) */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        gap: 1rem;
+        gap: 0.8rem;
+        padding: 0.8rem 1rem;
+    }
+
+    .navbar-brand h1 {
+        font-size: 1.4rem;
     }
 
     .nav-menu {
         flex-direction: column;
         gap: 0.5rem;
+        width: 100%;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0.8rem;
     }
 
     .main-content {
-        padding: 1.5rem 1rem;
+        padding: 1.5rem 0.8rem;
+        max-width: 100%;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-header h2::after {
+        width: 60px;
     }
 
     .about-card {
         grid-template-columns: 1fr;
-        padding: 1.5rem;
+        padding: 1.2rem;
         text-align: center;
+        gap: 1rem;
     }
 
     .profile-image {
@@ -980,12 +1027,59 @@ body {
         font-size: 2.5rem;
     }
 
-    .section-header h2 {
-        font-size: 1.8rem;
+    .profile-links {
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    .social-btn {
+        flex: 0 1 auto;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .social-btn .icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .skill-tags {
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .skill-tag {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .education-item,
+    .experience-item {
+        grid-template-columns: 70px 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .education-logo,
+    .company-logo {
+        width: 70px;
+        height: 70px;
     }
 
     .projects-grid {
         grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .project-card {
+        padding: 1rem;
+    }
+
+    .project-image {
+        height: 150px;
+        margin-bottom: 0.8rem;
     }
 
     .project-header {
@@ -993,12 +1087,34 @@ body {
         gap: 0.5rem;
     }
 
+    .project-links {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
     .cert-card {
         grid-template-columns: 1fr;
+        padding: 1rem;
     }
 
     .cert-icon {
         text-align: left;
+        width: 80px;
+        height: 80px;
+    }
+
+    .awards-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+    .award-card {
+        padding: 1.2rem;
+    }
+
+    .award-icon {
+        font-size: 2.2rem;
+        margin-bottom: 0.8rem;
     }
 
     .hobby-items {
@@ -1006,42 +1122,346 @@ body {
     }
 
     .other-hobbies {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 1rem;
+    }
+
+    .section-content {
+        padding: 0;
     }
 }
 
+/* Small mobile devices (480px and down) */
 @media (max-width: 480px) {
+    .navbar {
+        padding: 0.6rem 0.8rem;
+        gap: 0.6rem;
+    }
+
     .navbar-brand h1 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .nav-menu {
-        gap: 0.5rem;
+        gap: 0.4rem;
+        flex-direction: column;
     }
 
     .nav-link {
-        padding: 0.3rem 0.6rem;
-        font-size: 0.9rem;
+        padding: 0.4rem 0.6rem;
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 1rem 0.5rem;
+    }
+
+    .section-header {
+        margin-bottom: 1.2rem;
     }
 
     .section-header h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
     }
 
-    .skill-tags {
-        gap: 0.5rem;
-    }
-
-    .skill-tag {
-        font-size: 0.8rem;
-        padding: 0.4rem 0.8rem;
+    .section-header h2::after {
+        width: 50px;
+        height: 3px;
     }
 
     .about-card {
-        padding: 1rem;
+        padding: 0.8rem;
+        gap: 0.8rem;
     }
 
-    .social-links {
-        gap: 1rem;
+    .about-content {
+        padding: 0;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+        font-size: 2rem;
+    }
+
+    .profile-info h1 {
+        font-size: 1.3rem;
+        margin: 0.5rem 0;
+    }
+
+    .profile-info p {
+        font-size: 0.9rem;
+        margin: 0.3rem 0;
+    }
+
+    .profile-links {
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin-top: 0.6rem;
+        justify-content: center;
+    }
+
+    .social-btn {
+        flex: 0 1 auto;
+        padding: 0.35rem 0.5rem;
+        font-size: 0.7rem;
+        gap: 0.3rem;
+        min-height: 32px;
+    }
+
+    .social-btn .icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    .social-btn span {
+        display: none;
+    }
+
+    .skill-tags {
+        gap: 0.4rem;
+        justify-content: center;
+    }
+
+    .skill-tag {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .education-item,
+    .experience-item {
+        grid-template-columns: 50px 1fr;
+        gap: 0.8rem;
+        padding: 0.8rem;
+    }
+
+    .education-logo,
+    .company-logo {
+        width: 50px;
+        height: 50px;
+        font-size: 1.8rem;
+    }
+
+    .education-details h4,
+    .experience-details h4 {
+        font-size: 0.95rem;
+    }
+
+    .education-details p,
+    .experience-details p {
+        font-size: 0.8rem;
+    }
+
+    .projects-grid {
+        gap: 0.8rem;
+    }
+
+    .project-card {
+        padding: 0.8rem;
+    }
+
+    .project-image {
+        height: 120px;
+        margin-bottom: 0.6rem;
+    }
+
+    .project-header {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .project-header h3 {
+        font-size: 1.1rem;
+    }
+
+    .project-header p {
+        font-size: 0.8rem;
+    }
+
+    .project-links {
+        flex-wrap: wrap;
+        gap: 0.4rem;
+    }
+
+    .project-link {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.75rem;
+    }
+
+    .tech-tags {
+        gap: 0.3rem;
+        flex-wrap: wrap;
+    }
+
+    .tech-tag {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .cert-card {
+        grid-template-columns: 60px 1fr;
+        gap: 0.8rem;
+        padding: 0.8rem;
+    }
+
+    .cert-icon {
+        text-align: left;
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .cert-details h4 {
+        font-size: 0.95rem;
+    }
+
+    .cert-details p {
+        font-size: 0.8rem;
+    }
+
+    .awards-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+
+    .award-card {
+        padding: 0.8rem;
+    }
+
+    .award-icon {
+        font-size: 1.8rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .award-card h4 {
+        font-size: 0.9rem;
+    }
+
+    .award-card p {
+        font-size: 0.75rem;
+    }
+
+    .hobby-items {
+        gap: 0.8rem;
+    }
+
+    .hobby-item {
+        max-width: 100%;
+    }
+
+    .hobby-item img,
+    .hobby-item .poster {
+        height: 120px;
+    }
+
+    .other-hobbies {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+    }
+
+    .hobby-card {
+        font-size: 0.75rem;
+    }
+}
+
+/* Extra small devices (360px and down) */
+@media (max-width: 360px) {
+    .navbar {
+        padding: 0.5rem 0.4rem;
+        gap: 0.4rem;
+    }
+
+    .navbar-brand h1 {
+        font-size: 0.95rem;
+    }
+
+    .nav-link {
+        padding: 0.3rem 0.4rem;
+        font-size: 0.7rem;
+    }
+
+    .main-content {
+        padding: 0.8rem 0.4rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .about-card {
+        padding: 0.6rem;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+        font-size: 1.8rem;
+    }
+
+    .profile-info h1 {
+        font-size: 1.1rem;
+    }
+
+    .skill-tag {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .education-item,
+    .experience-item {
+        grid-template-columns: 40px 1fr;
+        gap: 0.6rem;
+        padding: 0.6rem;
+    }
+
+    .education-logo,
+    .company-logo {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .project-card {
+        padding: 0.6rem;
+    }
+
+    .project-image {
+        height: 100px;
+    }
+
+    .tech-tag {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .cert-card {
+        grid-template-columns: 50px 1fr;
+        gap: 0.6rem;
+        padding: 0.6rem;
+    }
+
+    .cert-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .awards-list {
+        grid-template-columns: 1fr;
+    }
+
+    .award-card {
+        padding: 0.6rem;
+    }
+
+    .award-icon {
+        font-size: 1.5rem;
+    }
+
+    .other-hobbies {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
     }
 }
