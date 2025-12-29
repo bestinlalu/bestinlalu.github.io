@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestin Lalu - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <h1>Bestin Lalu</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active" onclick="showSection('about')">About</a></li>
+                <li><a href="#" class="nav-link" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#" class="nav-link" onclick="showSection('certifications')">Certifications</a></li>
+                <li><a href="#" class="nav-link" onclick="showSection('awards')">Awards</a></li>
+                <li><a href="#" class="nav-link" onclick="showSection('hobbies')">Hobbies</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- About Section (Default) -->
+            <section id="about" class="section active">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                </div>
+                <div class="section-content">
+                    <!-- Profile Section -->
+                    <div class="about-card">
+                        <div class="profile-image">
+                            <!-- Replace with your photo: update src path -->
+                            <img src="images/profile.jpeg" alt="Profile Picture" class="profile-photo">
+                            <!-- Fallback avatar with initials -->
+                            <div class="avatar">BL</div>
+                            <!-- Social links under profile picture -->
+                            <div class="profile-links" aria-label="Social links">
+                                <a href="https://github.com/bestinlalu" class="social-btn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/github_logo.png" alt="" style="width: 20px; vertical-align: middle; margin-right: 8px;">
+                                    GitHub
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/bestinlalu/" class="social-btn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/linkedin_logo.png" alt="" style="width: 20px; vertical-align: middle; margin-right: 8px;">
+                                    LinkedIn
+                                </a>
+
+                                <a href="https://medium.com/@bestinlalu" class="social-btn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/medium_logo.png" alt="" style="width: 20px; vertical-align: middle; margin-right: 8px;">
+                                    Medium
+                                </a>
+                            </div>
+                        </div>
+                        <div class="about-text">
+                            <h3>Hello! I'm Bestin Lalu</h3>
+                            <p class="intro">A passionate developer and tech enthusiast</p>
+                            <div class="bio">
+                                <p>Welcome to my portfolio! I'm a dedicated professional with expertise in backend development, software engineering, and problem-solving.</p>
+                                <p>I love creating elegant solutions to complex problems and continuously learning new technologies.</p>
+                            </div>
+                            <div class="contact-info">
+                                <div class="info-item">
+                                    <span class="label">Email:</span>
+                                    <span class="value">blalu@ncsu.edu</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Location:</span>
+                                    <span class="value">Raleigh, NC</span>
+                                </div>
+                                <!-- <div class="info-item">
+                                    <span class="label">Phone:</span>
+                                    <span class="value">+1 (984) 379-8657</span>
+                                </div> -->
+                            </div>
+                            <div class="skills">
+                                <h4>Skills</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">C++</span>
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">Cloud</span>
+                                    <span class="skill-tag">DBMS</span>
+                                    <span class="skill-tag">REST API</span>
+                                    <span class="skill-tag">Kafka</span>
+                                    <span class="skill-tag">Git</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Section -->
+                    <div class="education-section">
+                        <h3>Education</h3>
+                        <div class="education-list">
+                            <div class="education-item">
+                                <div class="education-icon">
+                                    <img src="images/ncsu_logo.png" alt="University Logo" class="education-logo">
+                                    <span class="icon-fallback">📚</span>
+                                </div>
+                                <div class="education-details">
+                                    <h4>Master of Computer Science</h4>
+                                    <p class="institution">North Carolina State University</p>
+                                    <p class="period">2025 - 2027</p>
+                                    <p class="score"><b>GPA:</b> 4.0 / 4.0</p>
+                                    <p class="description"><b>Relevant coursework:</b> Design and Analysis of Algorithms, DBMS, OO Design and Development, Advanced Distributed Systems</p>
+                                </div>
+                            </div>
+
+                            <div class="education-item">
+                                <div class="education-icon">
+                                    <img src="images/mec_logo.jpg" alt="University Logo" class="education-logo">
+                                    <span class="icon-fallback">🎓</span>
+                                </div>
+                                <div class="education-details">
+                                    <h4>Bachelor of Technology in Computer Science and Engineering</h4>
+                                    <p class="institution">Model Engineering College</p>
+                                    <p class="period">2018 - 2022</p>
+                                    <p class="score"><b>CGPA:</b> 8.43 / 10.0</p>
+                                    <p class="description"><b>Relevant coursework:</b> Programming in Java, Python and C++, SDLC, Computer Networks and Architecture, AI</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Section -->
+                    <div class="experience-section">
+                        <h3>Experience</h3>
+                        <div class="experience-list">
+
+                            <div class="experience-item">
+                                <div class="experience-icon">
+                                    <img src="images/outpayce_logo.png" alt="Company Logo" class="company-logo">
+                                    <span class="icon-fallback">💼</span>
+                                </div>
+                                <div class="experience-details">
+                                    <h4>Software Development Engineer 2</h4>
+                                    <p class="company">Outpayce from Amadeus</p>
+                                    <p class="period">May 2024 - July 2025</p>
+                                    <p class="description">• <b>Designed and deployed two Azure cloud-native applications:</b> a high-throughput <b>Kafka-based</b> service processing <b>1M+ transactions/day</b>, and a <b>REST-based</b> marketplace platform that enables customers to compare and select payment partners, improving visibility into the payment platform and eliminating initial manual overhead, resulting in faster customer onboarding.</p>
+                                    <p class="description">• <b>Developed an 80%+ confident SARIMAX forecasting model</b> predicting daily payment transactions, guiding capacity planning and serving as the team's first AI/ML proof of concept, driving broader adoption of ML capabilities.</p>
+                                    <p class="description">• <b>Optimized performance by 70% (from 10s to under 3s)</b> through redesigning JSON filtering algorithm using JsonPath, reducing O(nk) complexity to O(n+c) and cutting page load.</p>
+                                    <p class="description">• <b>Reduced operational costs by 50%</b> by leveraging Horizontal Pod Autoscaling and log volume reduction strategies on Azure.</p>
+                                    <p class="description">• <b>Enhanced Kafka service reliability by implementing health checks and pausability mechanisms</b>, reducing missing events and unbilled transactions to zero during system crashes or broker outages.</p>
+                                    <p class="description">• <b>Developed Splunk/Kibana dashboards</b> to monitor key KPIs, input/output flows, missing events, and data inconsistencies.</p>
+                                    <p class="description">• <b>Drove the Platform team's transition from Docker to Podman for local development</b>, establishing standardized containerization practices supported by detailed documentation and runbooks.</p>
+                                    <p class="description">• <b>Mentored 2 junior developers</b>, strengthening their knowledge of industry programming practices as well as agile workflows.</p>
+                                    <div class="achievement-tags">
+                                        <span class="achievement">Java Quarkus</span>
+                                        <span class="achievement">Azure</span>
+                                        <span class="achievement">Kafka</span>
+                                        <span class="achievement">Async</span>
+                                        <span class="achievement">Splunk</span>
+                                        <span class="achievement">Prometheus/Grafana</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience-item">
+                                <div class="experience-icon">
+                                    <img src="images/outpayce_logo.png" alt="Company Logo" class="company-logo">
+                                    <span class="icon-fallback">💼</span>
+                                </div>
+                                <div class="experience-details">
+                                    <h4>Software Development Engineer 1</h4>
+                                    <p class="company">Outpayce from Amadeus</p>
+                                    <p class="period">May 2023 - May 2024</p>
+                                    <p class="description">Worked closely on <b>architecture and API design</b> for the Outpayce Marketplace Catalog, creating clear low-level designs and applying industry design patterns to build a reliable, scalable platform.</p>
+                                    <div class="achievement-tags">
+                                        <span class="achievement">Java Quarkus</span>
+                                        <span class="achievement">REST APIs</span>
+                                        <span class="achievement">MongoDB</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience-item">
+                                <div class="experience-icon">
+                                    <img src="images/amadeus_logo.png" alt="Company Logo" class="company-logo">
+                                    <span class="icon-fallback">💼</span>
+                                </div>
+                                <div class="experience-details">
+                                    <h4>Software Development Engineer 1</h4>
+                                    <p class="company">Amadeus</p>
+                                    <p class="period">August 2022 - April 2023</p>
+                                    <p class="description">Implemented robust <b>Credit Card Payment Authorization, Capture, and Notification</b> features in Amadeus Payment Server using <b>C++</b>, ensuring reliable transactions across airlines and partners.</p>
+                                    <div class="achievement-tags">
+                                        <span class="achievement">C++</span>
+                                        <span class="achievement">SQL</span>
+                                        <span class="achievement">Linux</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience-item">
+                                <div class="experience-icon">
+                                    <img src="images/feynn_labs.png" alt="Company Logo" class="company-logo">
+                                    <span class="icon-fallback">💼</span>
+                                </div>
+                                <div class="experience-details">
+                                    <h4>Machine Learning Intern</h4>
+                                    <p class="company">Feynn Labs</p>
+                                    <p class="period">March 2022 - April 2022</p>
+                                    <p class="description">Analyzed the different nutritional deficiencies and along different regions as well as different states and compared it with a standard provided by the RDA. Produced an outcome which can serve as a potential marketable area for a Biotech start-up.</p>
+                                    <div class="achievement-tags">
+                                        <span class="achievement">Python</span>
+                                        <span class="achievement">Pandas</span>
+                                        <span class="achievement">Numpy</span>
+                                        <span class="achievement">PCA Analyis</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section">
+                <div class="section-header">
+                    <h2>My Projects</h2>
+                </div>
+                <div class="section-content">
+                    <div class="projects-grid">
+                        <!-- Project 1 -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/course_enrollment_system.png" alt="Course Enrollment System" class="proj-img">
+                                <span class="image-placeholder">📱</span>
+                            </div>
+                            <div class="project-header">
+                                <h3>Course Enrollment System</h3>
+                            </div>
+                            <p class="project-description">
+                                Developed and deployed a full-stack enrollment platform that manages user roles and enables students to register, enroll/dropcourses, and share peer-visible feedback. 
+                                Implemented a secure admin dashboard and RESTful APIs to manage CRUD operations for students, courses, and feedback.
+                            </p>
+                            <p class="project-description"><b>Website Login Details:</b> </br>username: admin, password: password</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Ruby on Rails</span>
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">SQLite3</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">REST API</span>
+                            </div>
+                            <div class="project-button-container">
+                                <a href="https://github.com/bestinlalu/CourseApp" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/github_logo.png" alt="" style="width: 20px; vertical-align: middle; margin-right: 8px;">
+                                    GitHub
+                                </a>
+                                <a href="http://18.190.152.238:3000/" class="project-link" target="_blank" rel="noopener noreferrer">Website</a>
+                            </div>
+                        </div>
+                        <!-- Project 2 -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/online_attendance_system.png" alt="Attendance Marking System for Online Classes" class="proj-img">
+                                <span class="image-placeholder">🌤️</span>
+                            </div>
+                            <div class="project-header">
+                                <h3>Attendance Marking System for Online Classes</h3>
+                            </div>
+                            <p class="project-description">
+                                Engineered the full ML pipeline for facial recognition, integrating a Flask API to dynamically train the TensorFlow/Keras model with new student enrollment data.
+                                Marks attendance using facial recognition technology at random intervals and exports data in CSV format.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python Flask</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">Keras</span>
+                                <span class="tech-tag">HTML/CSS</span>
+                            </div>
+                            <div class="project-button-container">
+                                <a href="https://github.com/bestinlalu/auto-attendance-marker" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/github_logo.png" alt="" style="width: 20px; vertical-align: middle; margin-right: 8px;">
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Project 3 -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/market_segmentation_project.png" alt="Market Segmentation for Biotech-Tech Startups" class="proj-img">
+                                <span class="image-placeholder">✅</span>
+                            </div>
+                            <div class="project-header">
+                                <h3>Market Segmentation for Biotech-Tech Startups</h3>
+                            </div>
+                            <p class="project-description">
+                                Conducted market segmentation analysis for a biotech startup using ML and datasets focusing on demographics, geography, and nutrition to identify target markets in India.
+                                Identified highly potential regions <b>(Haryana, Meghalaya)</b> for product launches.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">Numpy</span>
+                                <span class="tech-tag">PCA Analysis</span>
+                            </div>
+                            <div class="project-button-container">
+                                <a href="https://github.com/bestinlalu/Feynn-Labs-Projects" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/github_logo.png" alt="" style="width: 20px; vertical-align: middle; margin-right: 8px;">
+                                    GitHub
+                                </a>
+                                <a href="https://www.linkedin.com/posts/bestinlalu_hi-everyone-id-like-to-talk-about-my-virtual-activity-6928740847605731328-oDYW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC2PJD4BzdYbMPumizL-TyKp9fIt8oYVFmQ" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/linkedin_logo.png" alt="" style="width: 20px; vertical-align: middle; margin-right: 8px;">
+                                    LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications Section -->
+            <section id="certifications" class="section">
+                <div class="section-header">
+                    <h2>Certifications</h2>
+                </div>
+                <div class="section-content">
+                    <div class="certifications-list">
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <img src="images/docker_logo.png" alt="Docker Certification" class="cert-image">
+                                <span class="icon-fallback">🏆</span>
+                            </div>
+                            <div class="cert-details">
+                                <div class="cert-header">
+                                    <h3>Docker Foundations Professional Certificate</h3>
+                                    <a href="https://www.linkedin.com/learning/certificates/165cd1e33d1229c66b4f98ca115bba9312576e13335876de414e6c22dfe63adb?u=53565897" class="cert-link" target="_blank" rel="noopener noreferrer">View Credential</a>
+                                </div>
+                                <p class="cert-issuer">Docker, Inc</p>
+                                <p class="cert-date">Issued: December 2025</p>
+                                <p class="cert-description">Professional level certification demonstrating expertise in containerization and Docker products.</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <img src="images/microsoft_logo.png" alt="Microsoft Certification" class="cert-image">
+                                <span class="icon-fallback">🎓</span>
+                            </div>
+                            <div class="cert-details">
+                                <div class="cert-header">
+                                    <h3>Microsoft Certified: Azure Fundamentals</h3>
+                                    <a href="https://learn.microsoft.com/en-us/users/bestinlalu-9688/credentials/9f9ace6fc9b0b483?ref=https%3A%2F%2Fwww.linkedin.com%2F" class="cert-link" target="_blank" rel="noopener noreferrer">View Credential</a>
+                                </div>
+                                <p class="cert-issuer">Microsoft</p>
+                                <p class="cert-date">Completed: March 2025</p>
+                                <p class="cert-description">Comprehensive course covering Artificial Intelligence workloads, fundamental principles of machine learning on Azure, features of Computer Vision, Natural Language Processing (NLP) and Generative AI workloads on Azure</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <img src="images/microsoft_logo.png" alt="Microsoft Certification" class="cert-image">
+                                <span class="icon-fallback">📚</span>
+                            </div>
+                            <div class="cert-details">
+                                <div class="cert-header">
+                                    <h3>Microsoft Certified: Azure Fundamentals</h3>
+                                    <a href="https://learn.microsoft.com/en-us/users/bestinlalu-9688/credentials/43a7b9d573aa1735?ref=https%3A%2F%2Fwww.linkedin.com%2F" class="cert-link" target="_blank" rel="noopener noreferrer">View Credential</a>
+                                </div>
+                                <p class="cert-issuer">Microsoft</p>
+                                <p class="cert-date">Completed: June 2024</p>
+                                <p class="cert-description">Comprehensive course covering cloud concepts, Azure architecture and services, Azure management and governance.</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <img src="images/ibm_logo.jpg" alt="IBM Certification" class="cert-image">
+                                <span class="icon-fallback">🎓</span>
+                            </div>
+                            <div class="cert-details">
+                                <div class="cert-header">
+                                    <h3>Enterprise Design Thinking Practitioner</h3>
+                                    <a href="https://www.credly.com/badges/1424cf20-9e67-4f97-9df3-2cbbf5424529?source=linked_in_profile" class="cert-link" target="_blank" rel="noopener noreferrer">View Credential</a>
+                                </div>
+                                <p class="cert-issuer">IBM</p>
+                                <p class="cert-date">Completed: July 2021</p>
+                                <p class="cert-description">Acquired knowledge of applying Enterprise Design Thinking and its value.</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <img src="images/coursera_logo.png" alt="Coursera Certification" class="cert-image">
+                                <span class="icon-fallback">🎓</span>
+                            </div>
+                            <div class="cert-details">
+                                <div class="cert-header">
+                                    <h3>Game Theory with Python</h3>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/HRJ8MQK6ZBP7" class="cert-link" target="_blank" rel="noopener noreferrer">View Credential</a>
+                                </div>
+                                <p class="cert-issuer">Coursera</p>
+                                <p class="cert-date">Completed: August 2020</p>
+                                <p class="cert-description">Acquired knowledge on game theory and its applications in Python.</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <img src="images/hackerank_logo.png" alt="HackerRank Certification" class="cert-image">
+                                <span class="icon-fallback">🎓</span>
+                            </div>
+                            <div class="cert-details">
+                                <div class="cert-header">
+                                    <h3>Python (Basic)</h3>
+                                    <a href="https://www.hackerrank.com/certificates/ef78b2062926" class="cert-link" target="_blank" rel="noopener noreferrer">View Credential</a>
+                                </div>
+                                <p class="cert-issuer">HackerRank</p>
+                                <p class="cert-date">Completed: August 2020</p>
+                                <p class="cert-description">Completed HackerRank coding challenges on Scalar Types, Operators and Control Flow, Strings, Collections and Iteration, Modularity, Objects and Types and Classes.</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <img src="images/university_michigan_logo.png" alt="Coursera Certification" class="cert-image">
+                                <span class="icon-fallback">🎓</span>
+                            </div>
+                            <div class="cert-details">
+                                <div class="cert-header">
+                                    <h3>Programming for Everybody (Getting Started with Python)</h3>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/3GAJPR97V3KK" class="cert-link" target="_blank" rel="noopener noreferrer">View Credential</a>
+                                </div>
+                                <p class="cert-issuer">University of Michigan</p>
+                                <p class="cert-date">Completed: July 2020</p>
+                                <p class="cert-description">Attained foundational knowledge in programming using Python.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Awards Section -->
+            <section id="awards" class="section">
+                <div class="section-header">
+                    <h2>Awards & Honors</h2>
+                </div>
+                <div class="section-content">
+                    <div class="awards-list">
+                        <div class="award-card">
+                            <div class="award-icon">
+                                <img src="images/1st.png" alt="Winner" class="award-image">
+                            </div>
+                            <div class="award-details">
+                                <h3>High Flier Award</h3>
+                                <p class="award-organization">Outpayce from Amadeus</p>
+                                <p class="award-date">August 2025</p>
+                                <p class="award-description">Recognized for successful development and launch of Marketplace Catalog - a payments marketplace dedicated to travel, designed to help airlines choose the right connection to improve their performance, strengthening our role as a pioneer in payments and partnerships.</p>
+                            </div>
+                        </div>
+
+                        <div class="award-card">
+                            <div class="award-icon">
+                                <img src="images/pacestter.png" alt="PaceSetter" class="award-image">
+                            </div>
+                            <div class="award-details">
+                                <h3>PaceSetter</h3>
+                                <p class="award-organization">Amadeus</p>
+                                <p class="award-date">January 2025</p>
+                                <p class="award-description">Awarded for effective adoption of "faster better simpler" at Amadeus Labs</p>
+                            </div>
+                        </div>
+
+                        <div class="award-card">
+                            <div class="award-icon">
+                                <img src="images/pacestter.png" alt="PaceSetter" class="award-image">
+                            </div>
+                            <div class="award-details">
+                                <h3>PaceSetter</h3>
+                                <p class="award-organization">Amadeus</p>
+                                <p class="award-date">September 2024</p>
+                                <p class="award-description">Awarded for effective adoption of "faster better simpler" at Amadeus Labs</p>
+                            </div>
+                        </div>
+
+                        <div class="award-card">
+                            <div class="award-icon">
+                                <img src="images/pacestter.png" alt="PaceSetter" class="award-image">
+                            </div>
+                            <div class="award-details">
+                                <h3>PaceSetter</h3>
+                                <p class="award-organization">Amadeus</p>
+                                <p class="award-date">December 2024</p>
+                                <p class="award-description">Awarded for effective adoption of "faster better simpler" at Amadeus Labs</p>
+                            </div>
+                        </div>
+
+                        <div class="award-card">
+                            <div class="award-icon">
+                                <img src="images/programmer.png" alt="GameChanger" class="award-image">
+                            </div>
+                            <div class="award-details">
+                                <h3>GameChanger</h3>
+                                <p class="award-organization">Amadeus</p>
+                                <p class="award-description">Recognized for the Hurrah GameChanger Program; Quickly scaled up on Java, Skube, Quarkus, MongoDB.
+                                    Contributed significantly to the customer management microservice. Implemented CI pipleline and helped other teammates in resolving issues.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="award-card">
+                            <div class="award-icon">
+                                <img src="images/2nd.png" alt="2nd" class="award-image">
+                            </div>
+                            <div class="award-details">
+                                <h3>Hackathon Winner - Second Place</h3>
+                                <p class="award-organization">Devathon</p>
+                                <p class="award-date">2019</p>
+                                <p class="award-description">Won second place in a 24-hour hackathon building an AI-powered medical diagnosis and treatment recommendation chatbot..</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hobbies Section -->
+            <section id="hobbies" class="section">
+                <div class="section-header">
+                    <h2>Hobbies & Interests</h2>
+                </div>
+                <div class="section-content">
+                    <div class="hobbies-container">
+                        <!-- Favorite Movies -->
+                        <div class="hobby-section">
+                            <h3>🎬 Favorite Movies and Animes</h3>
+                            <div class="hobby-items">
+                                <div class="hobby-item">
+                                    <div class="movie-poster">
+                                        <img src="images/naruto.webp" alt="The Shawshank Redemption" class="poster-img">
+                                        <span class="poster-placeholder">🎬</span>
+                                    </div>
+                                    <h4>Naruto Shippuden</h4>
+                                    <p class="year">2007</p>
+                                </div>
+
+                                <div class="hobby-item">
+                                    <div class="movie-poster">
+                                        <img src="images/home.jpeg" alt="Inception" class="poster-img">
+                                        <span class="poster-placeholder">🎬</span>
+                                    </div>
+                                    <h4>Home</h4>
+                                    <p class="year">2021</p>
+                                </div>
+
+                                <div class="hobby-item">
+                                    <div class="movie-poster">
+                                        <img src="images/ironman.jpg" alt="The Dark Knight" class="poster-img">
+                                        <span class="poster-placeholder">🎬</span>
+                                    </div>
+                                    <h4>Iron Man</h4>
+                                    <p class="year">2008</p>
+                                </div>
+
+                                <div class="hobby-item">
+                                    <div class="movie-poster">
+                                        <img src="images/amazing_spider_man_movie_poster.webp" alt="The Amazing Spider-Man" class="poster-img">
+                                        <span class="poster-placeholder">🎬</span>
+                                    </div>
+                                    <h4>The Amazing Spider-Man</h4>
+                                    <p class="year">2012</p>
+                                </div>
+
+                                <div class="hobby-item">
+                                    <div class="movie-poster">
+                                        <img src="images/truman_show.jpg" alt="The Truman Show" class="poster-img">
+                                        <span class="poster-placeholder">🎬</span>
+                                    </div>
+                                    <h4>The Truman Show</h4>
+                                    <p class="year">1998</p>
+                                </div>
+
+                                <div class="hobby-item">
+                                    <div class="movie-poster">
+                                        <img src="images/good_will_hunting.jpg" alt="Good Will Hunting" class="poster-img">
+                                        <span class="poster-placeholder">🎬</span>
+                                    </div>
+                                    <h4>Good Will Hunting</h4>
+                                    <p class="year">1997</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Favorite Music -->
+                        <div class="hobby-section">
+                            <h3>🎵 Favorite Music</h3>
+                            <div class="hobby-items">
+                                <div class="hobby-item">
+                                    <div class="album-cover">
+                                        <img src="images/a_thousand_suns_cover.jpg" alt="A Thousand Suns" class="album-img">
+                                        <span class="album-placeholder">🎵</span>
+                                    </div>
+                                    <h4>Iridescent</h4>
+                                    <p class="artist">Linkin Park</p>
+                                </div>
+
+                                <div class="hobby-item">
+                                    <div class="album-cover">
+                                        <img src="images/fix_you.jpg" alt="X&Y" class="album-img">
+                                        <span class="album-placeholder">🎵</span>
+                                    </div>
+                                    <h4>Fix You</h4>
+                                    <p class="artist">Coldplay</p>
+                                    <p class="description">A catchy synthwave pop hit with an infectious beat and great production quality.</p>
+                                </div>
+
+                                <div class="hobby-item">
+                                    <div class="album-cover">
+                                        <img src="images/21guns.jpg" alt="21st Century Breakdown" class="album-img">
+                                        <span class="album-placeholder">🎵</span>
+                                    </div>
+                                    <h4>21 Guns</h4>
+                                    <p class="artist">Green Day</p>
+                                </div>
+
+                                <div class="hobby-item">
+                                    <div class="album-cover">
+                                        <img src="images/mulla.jpeg" alt="Hope" class="album-img">
+                                        <span class="album-placeholder">🎵</span>
+                                    </div>
+                                    <h4>Mulla</h4>
+                                    <p class="artist">Job Kurian</p>
+                                </div>
+
+                                <div class="hobby-item">
+                                    <div class="album-cover">
+                                        <img src="images/photograph.jpeg" alt="X" class="album-img">
+                                        <span class="album-placeholder">🎵</span>
+                                    </div>
+                                    <h4>Photograph</h4>
+                                    <p class="artist">Ed Sheeran</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Other Hobbies -->
+                        <div class="hobby-section full-width">
+                            <h3>🎯 Other Interests</h3>
+                            <div class="other-hobbies">
+                                <div class="hobby-box">
+                                    <h4>Reading</h4>
+                                    <p>Enjoy fiction novels, tech blogs, and self-improvement books</p>
+                                </div>
+                                <div class="hobby-box">
+                                    <h4>Traveling</h4>
+                                    <p>Exploring new places, cultures, and experiences around the world</p>
+                                </div>
+                                <div class="hobby-box">
+                                    <h4>Coding Projects</h4>
+                                    <p>Building side projects and experimenting with new technologies</p>
+                                </div>
+                                <div class="hobby-box">
+                                    <h4>Photography</h4>
+                                    <p>Capturing moments and exploring visual storytelling</p>
+                                </div>
+                                <div class="hobby-box">
+                                    <h4>Cooking</h4>
+                                    <p>Creating new recipes and experimenting with flavors</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+        </br>
+            <p>Bestin Lalu. </p>
+            <p>Images are taken from various sources.</p>
+            <!-- <div class="social-links">
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div> -->
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
