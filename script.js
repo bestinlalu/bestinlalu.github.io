@@ -78,6 +78,63 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add scroll animation for elements
     observeElements();
+
+    // Hide navbar on scroll down, show on scroll up
+    (function() {
+        let lastScrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+        const navbar = document.querySelector('.navbar');
+        let ticking = false;
+        const DELTA = 5; // minimal change to act
+        const HIDE_THRESHOLD = 50; // start hiding once user scrolled past this
+
+        function onScroll() {
+            const currentY = window.pageYOffset || document.documentElement.scrollTop || 0;
+            if (!navbar) {
+                ticking = false;
+                return;
+            }
+
+            const diff = currentY - lastScrollY;
+            if (Math.abs(diff) < DELTA) {
+                ticking = false;
+                return;
+            }
+
+            if (diff > 0 && currentY > HIDE_THRESHOLD) {
+                // Scrolling down
+                navbar.classList.add('nav-hidden');
+            } else if (diff < 0) {
+                // Scrolling up
+                navbar.classList.remove('nav-hidden');
+            }
+
+            lastScrollY = currentY;
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                window.requestAnimationFrame(onScroll);
+                ticking = true;
+            }
+        }, { passive: true });
+    })();
+
+    // Measure navbar height and expose as CSS var so fixed navbar doesn't overlap content
+    (function() {
+        const navbar = document.querySelector('.navbar');
+        if (!navbar) return;
+        function updateNavHeight() {
+            const h = navbar.offsetHeight;
+            document.documentElement.style.setProperty('--navbar-height', h + 'px');
+            const main = document.querySelector('.main-content');
+            if (main) main.style.marginTop = h + 'px';
+        }
+        updateNavHeight();
+        window.addEventListener('resize', updateNavHeight);
+        // also update after fonts/images load
+        window.addEventListener('load', updateNavHeight);
+    })();
 });
 
 /**

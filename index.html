@@ -14,6 +14,7 @@
                 <h1>Bestin Lalu</h1>
             </div>
             <ul class="nav-menu">
+                <!-- <li class="nav-brand-item"><span class="nav-brand">Bestin Lalu</span></li> -->
                 <li><a href="#" class="nav-link active" onclick="showSection('about')">About</a></li>
                 <li><a href="#" class="nav-link" onclick="showSection('projects')">Projects</a></li>
                 <li><a href="#" class="nav-link" onclick="showSection('certifications')">Certifications</a></li>
@@ -37,24 +38,9 @@
                             <img src="images/profile.jpeg" alt="Profile Picture" class="profile-photo">
                             <!-- Fallback avatar with initials -->
                             <div class="avatar">BL</div>
-                            <!-- Social links under profile picture -->
-                            <div class="profile-links" aria-label="Social links">
-                                <a href="https://github.com/bestinlalu" class="social-btn" target="_blank" rel="noopener noreferrer">
-                                    <img src="images/github_logo.png" alt="" style="width: 20px; vertical-align: middle; margin-right: 8px;">
-                                    GitHub
-                                </a>
-
-                                <a href="https://www.linkedin.com/in/bestinlalu/" class="social-btn" target="_blank" rel="noopener noreferrer">
-                                    <img src="images/linkedin_logo.png" alt="" style="width: 20px; vertical-align: middle; margin-right: 8px;">
-                                    LinkedIn
-                                </a>
-
-                                <a href="https://medium.com/@bestinlalu" class="social-btn" target="_blank" rel="noopener noreferrer">
-                                    <img src="images/medium_logo.png" alt="" style="width: 20px; vertical-align: middle; margin-right: 8px;">
-                                    Medium
-                                </a>
-                            </div>
                         </div>
+
+                        <!-- Social links will appear to the right via .profile-actions -->
                         <div class="about-text">
                             <h3>Hello! I'm Bestin Lalu</h3>
                             <p class="intro">A passionate developer and tech enthusiast</p>
@@ -90,6 +76,25 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Social links moved to right column of about card -->
+                        <div class="profile-actions" aria-label="Social links">
+                            <a href="https://github.com/bestinlalu" class="social-btn" target="_blank" rel="noopener noreferrer">
+                                <img src="images/github_logo.png" alt="" style="width: 20px; vertical-align: middle; margin-right: 8px;">
+                                GitHub
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/bestinlalu/" class="social-btn" target="_blank" rel="noopener noreferrer">
+                                <img src="images/linkedin_logo.png" alt="" style="width: 20px; vertical-align: middle; margin-right: 8px;">
+                                LinkedIn
+                            </a>
+
+                            <a href="https://medium.com/@bestinlalu" class="social-btn" target="_blank" rel="noopener noreferrer">
+                                <img src="images/medium_logo.png" alt="" style="width: 20px; vertical-align: middle; margin-right: 8px;">
+                                Medium
+                            </a>
+                        </div>
+
                     </div>
 
                     <!-- Education Section -->
@@ -609,7 +614,6 @@
                                     </div>
                                     <h4>Fix You</h4>
                                     <p class="artist">Coldplay</p>
-                                    <p class="description">A catchy synthwave pop hit with an infectious beat and great production quality.</p>
                                 </div>
 
                                 <div class="hobby-item">
